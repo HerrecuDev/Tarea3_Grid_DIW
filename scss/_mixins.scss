@@ -1,0 +1,12 @@
+
+//Funciones a usar : 
+
+@mixin tablet{
+
+    @media(min-width: $formatoTablet){
+        
+        @content;
+    }
+
+
+}
