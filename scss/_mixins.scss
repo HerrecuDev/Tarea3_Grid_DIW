@@ -10,3 +10,12 @@
 
 
 }
+
+
+@mixin web{
+
+    @media(min-width: $formatoWeb){
+
+        @content;
+    }
+}
