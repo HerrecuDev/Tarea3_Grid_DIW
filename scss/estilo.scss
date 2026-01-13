@@ -19,117 +19,79 @@ body{
     background-color: var(--gris);
 }
 
+//Cambios en el diseño
+ul{
+    list-style: none;
+}
+
 a{
-    font-size: 20px;
+    font-size: 18px;
+    color: var(--claro);
+    text-decoration: none;
 }
 
 
 img{
     max-width: 100%;
 }
+
+
 header{
 
-    //Diseño
-    background-color:var(--primario);
-    padding: $padding;
+    //Le aplicamos el color de fondo a todo el header
+    background-color: var(--primario);
+    .cabecera{
 
-    //Formato movil
-    display: grid;
+        display: grid;
+        padding: var(--padding);
+        @include escritorio{
+            grid-template-columns: 30% auto 30%;
+        }
+    
     
 
-    //Formato Escritorio
-    @include web{
-        grid-template-columns: 30% auto 30%;
-        
-
-    }
-
-    .logo{
-        grid-column: 1/3;
-    }
-
-    //Menu del header:
-    .menu{
-        display: grid;
-        grid-column: 3/4;
-
-        ul{
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
-            align-items: center;
-
-            li{
-                
-                list-style: none;
-               
-
-
-                a{
-                    
-                    text-decoration: none;
-                    
-                    padding: var(--paddingt);
-
-                }
-
-            }
-        
-
-        
-
-        }
-
-    }
-
-
-        .nosotros{
-
-                display: grid;
-                margin-top: var(--padding);
-
-                @include web{
-
-                    grid-template-columns: repeat(2,1fr);
-
-                    img{
-                        grid-column: 1/2;
-                    }
-
-                    .texto{
-                        grid-column: 2/3;
-                    }
-                   
-                }
-
-
-
-        }
-
-
-        .venta{
-
-            display: grid;
-
-            .destacado{
-                display: grid;
-
-            }
-
+        .logo{
             
 
+            @include escritorio{
+                grid-column: 1/3;
+            }
 
 
         }
 
-    
-    
+        .menu{
+
+            justify-content: center;
+
+            @include escritorio{
+
+                
+                grid-column: 3/4;
+
+            }
+            
+           
+
+                ul{
+                    text-align: center;
+
+                    @include escritorio{
+                        display: grid;
+                        grid-template-columns: repeat(auto-fit, minmax(100px ,1fr));
+                       text-align: center;
+                    }
+
+                    
+                }
+
+        }
 
 
-
-
-    
-
-   
 
 }
+
+
+}
+
 
