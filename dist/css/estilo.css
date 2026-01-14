@@ -16,12 +16,12 @@
 }
 
 .contenedor {
-  max-width: 1100px;
+  max-width: 1500px;
   margin: 0 auto;
 }
 
 body {
-  background-color: var(--gris);
+  background-color: rgb(219, 214, 214);
 }
 
 ul {
@@ -29,9 +29,13 @@ ul {
 }
 
 a {
-  font-size: 18px;
+  font-size: 25px;
   color: var(--claro);
   text-decoration: none;
+}
+
+p {
+  font-size: 20px;
 }
 
 img {
@@ -50,28 +54,29 @@ header .cabecera {
     grid-template-columns: 30% auto 30%;
   }
 }
-@media (min-width: 768px) {
-  header .cabecera .logo {
-    grid-column: 1/3;
-  }
-}
 header .cabecera .menu {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-@media (min-width: 768px) {
-  header .cabecera .menu {
-    grid-column: 3/4;
-  }
+  grid-column: 3/4;
 }
 header .cabecera .menu ul {
-  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+main .nosotros {
+  display: grid;
 }
 @media (min-width: 768px) {
-  header .cabecera .menu ul {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    text-align: center;
+  main .nosotros {
+    grid-template-columns: 1fr 1fr;
+    gap: 2%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-}/*# sourceMappingURL=estilo.css.map */
+}
+main .nosotros img {
+  width: 100%;
+}
+main .nosotros .texto {
+  gap: 3%;
+}
