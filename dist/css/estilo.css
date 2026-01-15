@@ -38,16 +38,9 @@ p {
   font-size: 20px;
 }
 
-img {
-  max-width: 100%;
-}
-
 button {
   background-color: var(--primario);
   padding: 1rem;
-  width: 90%;
-  -ms-flex-item-align: center;
-      align-self: center;
 }
 
 header {
@@ -98,6 +91,7 @@ main h1 {
 }
 main .venta {
   display: grid;
+  grid-template-rows: repeat(2, 1fr);
 }
 @media (min-width: 480px) {
   main .venta {
@@ -109,11 +103,19 @@ main .venta {
 }
 @media (min-width: 700px) {
   main .venta {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 main .venta article {
   border: solid 2px black;
+}
+main .venta article img {
+  max-width: 100%;
+}
+main .venta article .casa h3 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 main .venta h3 {
   margin-top: 5%;
@@ -149,27 +151,10 @@ main .venta .destacado {
 .footer p {
   color: var(--claro);
 }
-.footer .apartado {
-  margin-top: 2rem;
-}
-.footer .apartado .nav ul li {
-  font-size: 12px;
-}
-.footer .apartado .ventas {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-column: 3/4;
-}
-.footer .apartado .ventas h3 {
-  font-size: 20px;
-}
-.footer .apartado .ventas div .imgMini {
-  max-width: 30%;
-}
 .footer .copy {
   background-color: var(--oscuro);
 }
 .footer .copy p {
   text-align: center;
   padding: 1rem;
-}/*# sourceMappingURL=estilo.css.map */
+}
