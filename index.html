@@ -3,81 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practica 03 GRID</title>
+    <title>Practica 3 Grid</title>
     <link rel="stylesheet" href="./dist/css/estilo.css">
 </head>
 <body>
 
-    <header>
+    <div id="cabecera">
 
-        <div class="contenedor cabecera">
-
-            <img src="/img/logo.png" class="logo" alt="">
+        <div class="contenedor">
+            <img src="img/logo.png" alt="">
 
             <nav class="menu">
-
                 <ul>
-                    <li><a href="">Nosotros</a></li>
-                    <li><a href="">Casas</a></li>
-                    <li><a href="">Contacto</a></li>
-
-
+                    <li>Nosotros</li>
+                    <li>Casas</li>
+                    <li>Contactos</li>
                 </ul>
-
 
             </nav>
 
 
-
         </div>
-        
+    </div>
 
-    </header>
+    <section class="contenedor">
+        <img src="img/nosotros.jpg" alt="">
+
+        <div class="nosotros">
+            <h1>Sobre Nosotros</h1>
+            <p>
+                Fusce augue est, tempor ut dignissim non, pharetra sed orci. Morbi fringilla dignissim blandit.
+                Sed aliquet ni nisi eu tincidunt. Cras laoreet at sem in blandit.
+                Nam eu mattis erat, a mattis metus. Sed sem lectus, vestibulum nec dictum ac, rutrum in mi.
+                Maecenas vitae nisl ultricies, ultricies elit ut, pellentesque sem. 
+                Etiam turpis mauris, sollicitudin nec nunc ut, consequat molestie sapien.
+
+            </p>
+        </div>
+
+    </section>
 
     <main class="contenedor">
 
-        <section class="nosotros">
+        <h2>A la venta</h2>
 
+        <article class="destacado">
 
-            <img src="/img/nosotros.jpg" class="imgNos" alt="">
+            <img src="img/casa1.jpg" alt="casa1">
 
-            <div class="texto">
+            <div class="txtDestacado">
 
-                <h1>Sobre Nosotros</h1>
-
-                <p>
-                    Fusce augue est, tempor ut dignissim non, pharetra sed orci. Morbi fringilla dignissim blandit.
-                    Sed aliquet ni nisi eu tincidunt. Cras laoreet at sem in blandit.
-                    Nam eu mattis erat, a mattis metus. Sed sem lectus, vestibulum nec dictum ac, rutrum in mi.
-                    Maecenas vitae nisl ultricies, ultricies elit ut, pellentesque sem. 
-                    Etiam turpis mauris, sollicitudin nec nunc ut, consequat molestie sapien.
-                </p>
-
-            </div>
-
-
-
-
-        </section>
-
-
-        <section class="">
-
-            <h1>A la venta</h1>
-
-            <div class="venta">
-
-                <article class="destacado">
-
-                    <div class="imgVenta">
-
-                        <img src="./img/casa1.jpg" class="img1" alt="">
-                    </div>
-                    
-
-                    <div class="txtCasa1">
-
-                        <h3>Casa 1</h3>
+                 <h2>Casa 1</h2>
 
                         <p>
 
@@ -97,230 +73,195 @@
 
                         </p>
 
-                        <p>
-
-                            Etiam turpis mauris, sollicitudin nec nunc ut, consequat molestie sapien. 
-                            Etiam turpis mauris, sollicitudin nec nunc ut.
-                            Etiam turpis mauris, sollicitudin nec nunc ut, consequat molestie sapien. 
-                            Etiam turpis mauris, sollicitudin nec nunc ut.
-
-                        </p>
-
-                        <p> Precio: $3,000,000 </p>
+                         <p> Precio: $3,000,000 </p>
 
                         <button>Más Información</button>
 
 
-
-                </div>
-                
-
-                </article>
-
-
-                <article>
-
-                    <div class="casa">
-
-                    <img src="./img/casa2.jpg" class="img2" alt="">
-
-
-                    <h2>Casa 2</h2>
-
-                    <p>
-
-                        Etiam turpis mauris, sollicitudin nec nunc ut, consequat molestie sapien. 
-                        Etiam turpis mauris, sollicitudin nec nunc ut.
-                        Etiam turpis mauris, sollicitudin nec nunc ut, consequat molestie sapien. 
-                        Etiam turpis mauris, sollicitudin nec nunc ut.
-
-                    </p>
-
-                    <p> Precio: $3,000,000 </p>
-
-                    <button>Más Información</button>
+            </div>
+        </article>
 
 
 
+                <article class="casas">
+                   
+                    <img src="./img/casa2.jpg" alt="">
+                    
+                    <div class="texto">
+
+                        <h2>Casa 2</h2>
+
+                        <p>
+
+                            Etiam turpis mauris, sollicitudin nec nunc ut, consequat molestie sapien. 
+                            Etiam turpis mauris, sollicitudin nec nunc ut.
+                            Etiam turpis mauris, sollicitudin nec nunc ut, consequat molestie sapien. 
+                            Etiam turpis mauris, sollicitudin nec nunc ut.
+
+                        </p>
+
+                       <div class="descrip">
+                            <p>Precio :</p>
+                            <span>$3,000,000</span>
+                       </div>
+
+                        <button>Más Información</button>
+        
                     </div>
-                
-
                 </article>
 
-                <article>
 
 
-                    <div class="casa">
+                <article class="casas">
+                   
+                    <img src="./img/casa3.jpg" alt="">
+                    
+                    <div class="texto">
 
-                        <img src="./img/casa3.jpg" class="img3" alt="">
                         <h2>Casa 3</h2>
 
                         <p>
 
-                        Etiam turpis mauris, sollicitudin nec nunc ut, consequat molestie sapien. 
-                        Etiam turpis mauris, sollicitudin nec nunc ut.
-                        Etiam turpis mauris, sollicitudin nec nunc ut, consequat molestie sapien. 
-                        Etiam turpis mauris, sollicitudin nec nunc ut.
+                            Etiam turpis mauris, sollicitudin nec nunc ut, consequat molestie sapien. 
+                            Etiam turpis mauris, sollicitudin nec nunc ut.
+                            Etiam turpis mauris, sollicitudin nec nunc ut, consequat molestie sapien. 
+                            Etiam turpis mauris, sollicitudin nec nunc ut.
 
                         </p>
 
-                        <p> Precio: $3,000,000 </p>
+                       <div class="descrip">
+                            <p>Precio :</p>
+                            <span>$3,000,000</span>
+                       </div>
 
                         <button>Más Información</button>
-
-
-
+        
                     </div>
-                    
-
-
                 </article>
 
-                <article>
 
-                    <div class="casa">
 
-                        <img src="./img/casa4.jpg" class="img4" alt="">
+                <article class="casas">
+                   
+                    <img src="./img/casa4.jpg" alt="">
+                    
+                    <div class="texto">
+
                         <h2>Casa 4</h2>
 
                         <p>
 
-                        Etiam turpis mauris, sollicitudin nec nunc ut, consequat molestie sapien. 
-                        Etiam turpis mauris, sollicitudin nec nunc ut.
-                        Etiam turpis mauris, sollicitudin nec nunc ut, consequat molestie sapien. 
-                        Etiam turpis mauris, sollicitudin nec nunc ut.
+                            Etiam turpis mauris, sollicitudin nec nunc ut, consequat molestie sapien. 
+                            Etiam turpis mauris, sollicitudin nec nunc ut.
+                            Etiam turpis mauris, sollicitudin nec nunc ut, consequat molestie sapien. 
+                            Etiam turpis mauris, sollicitudin nec nunc ut.
 
                         </p>
 
-                        <p> Precio: $3,000,000 </p>
+                       <div class="descrip">
+                            <p>Precio :</p>
+                            <span>$3,000,000</span>
+                       </div>
 
                         <button>Más Información</button>
-
-
+        
                     </div>
-                   
-
-
                 </article>
 
-                <article>
 
-                    <div class="casa">
 
-                        <img src="./img/casa5.jpg"  class="img5"alt="">
+                <article class="casas">
+                   
+                    <img src="./img/casa5.jpg" alt="">
+                    
+                    <div class="texto">
+
                         <h2>Casa 5</h2>
 
                         <p>
 
-                        Etiam turpis mauris, sollicitudin nec nunc ut, consequat molestie sapien. 
-                        Etiam turpis mauris, sollicitudin nec nunc ut.
-                        Etiam turpis mauris, sollicitudin nec nunc ut, consequat molestie sapien. 
-                        Etiam turpis mauris, sollicitudin nec nunc ut.
+                            Etiam turpis mauris, sollicitudin nec nunc ut, consequat molestie sapien. 
+                            Etiam turpis mauris, sollicitudin nec nunc ut.
+                            Etiam turpis mauris, sollicitudin nec nunc ut, consequat molestie sapien. 
+                            Etiam turpis mauris, sollicitudin nec nunc ut.
 
                         </p>
 
-                        <p> Precio: $3,000,000 </p>
+                       <div class="descrip">
+                            <p>Precio :</p>
+                            <span>$3,000,000</span>
+                       </div>
 
                         <button>Más Información</button>
-
-
-
+        
                     </div>
-                   
-
                 </article>
-
-
-
-
-            </div>
-
-           
-
-        </section>
-
-
-
     </main>
 
 
     <footer>
+        <div class="final contenedor">
 
-        <div class="contenedor footer">
-
-
-            <div class="apartado nos">
-
-                <h3>Nosotros</h3>
-
-                <p>Aliquam quam enim, interdum ut sollicitudin non, ferm rutrum nec elit. Morbi quis dolor volu que imperdiet felis magna.</p>
-
-
-            </div>
-
-            <div class="apartado nav">
-
-                <h3>Navegación</h3>
-                
-                    <ul>
-
-                        <li><a href="">Nosotros</a></li>
-                        <li><a href="">Casas</a></li>
-                        <li><a href="">Contacto</a></li>
-
-                    </ul>
-
-            </div>
-
-            <div class="apartado ventas">
-
-                <h3>Casas a la Venta</h3>
-
-                    <div class="casa2">
-                        <img src="img/casa2.jpg" alt="">
-                        <p>Casa 2</p>
-                        <p>$ 2,000,000</p>
-
-                    </div>
-
-                <div class="casa3">
-                    <img src="img/casa3.jpg" alt="">
-                    <p>Casa 3</p>
-                    <p>$ 2,000,000</p>
-
-                </div>
-
-
-                <div class="casa4">
-                    <img src="img/casa4.jpg" alt="">
-                    <p>Casa 4</p>
-                    <p>$ 2,000,000</p>
-
-                </div>
-
-
-                <div class="casa5">
-                    <img src="img/casa5.jpg" alt="">
-                    <p>Casa 5</p>
-                    <p>$ 2,000,000</p>
-
-                </div>
-            
-                
+            <div id="nos">
+                <h2>Nosotros</h2>
+                 <p>Aliquam quam enim, interdum ut sollicitudin non, ferm rutrum nec elit. Morbi quis dolor volu que imperdiet felis magna.</p>
             </div>
 
 
+            <div id="nav">
+
+                <h2>Navegación</h2>
+                <a href="">Nosotros</a>
+                <a href="">Casas</a>
+                <a href="">Contacto</a>
+
+            </div>
+
+            <div id="casasVenta">
+                <ul>
+
+                        <li>
+                            <img src="img/casa2.jpg" alt="">
+                            <div>
+                                <p>Casa 2</p>
+                                <p>$2,000,000</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/casa3.jpg" alt="">
+                            <div>
+                                <p id="p1">Casa 2</p>
+                                <p>$2,000,000</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/casa4.jpg" alt="">
+                            <div>
+                                <p>Casa 2</p>
+                                <p>$2,000,000</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/casa5.jpg" alt="">
+                            <div>
+                                <p>Casa 2</p>
+                                <p>$2,000,000</p>
+                            </div>
+                        </li>
+
+
+                </ul>
+            </div>
 
             <div class="copy">
-
-                <p>Derechos Reservados Bienes Raíces 2018</p>
-
+                <p>Derechos Reservados Bienes Raices 2018</p>
             </div>
+
 
         </div>
 
     </footer>
-    
+
     
 </body>
 </html>
